@@ -8,7 +8,8 @@ import {routes} from './routes/routes'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-	routes: routes
+	routes: routes,
+	mode: 'history'
 })
 
 //create global filter

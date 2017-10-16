@@ -1,7 +1,7 @@
-<template>
-	div
-		app-todo-inputs/
+<template lang="pug">
+	app-todo-inputs/
 </template>
+
 
 <script>
 	import TodoInputs from './TodoInputs.vue'
