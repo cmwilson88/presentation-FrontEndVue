@@ -15,8 +15,8 @@
 </script>
 
 <style lang="sass">
-
 $vue-color: #42B983
+
 #app,
 #navbar,
 #navbar a

@@ -15,7 +15,7 @@ const router = new VueRouter({
 //create global filter
 Vue.filter('camel-case', value => {
 	return value.split(' ').map(word => {
-		return word[0].toUpperCase() + words.substr(1)
+		return word[0].toUpperCase() + word.substr(1)
 	}).join (' ')
 })
 
