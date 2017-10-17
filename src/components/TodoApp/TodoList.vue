@@ -1,9 +1,12 @@
 <template>
 	<div>
-		<app-todo-inputs></app-todo-inputs>
+		<app-todo-inputs
+			@todoAdded="addTodoItem">
+		</app-todo-inputs>
+		
 		<app-todo-item
 			v-for="todo in todoList"
-			:todo="todo">	
+			:todo="todo">
 		</app-todo-item>
 	</div>
 </template>
@@ -36,6 +39,12 @@
 		components: {
 			appTodoInputs: TodoInputs,
 			appTodoItem: TodoItem
+		},
+		methods: {
+			addTodoItem(val) {
+				console.log('addTodoItem')
+				this.todoList.push(val)
+			}
 		}
 	}
 </script>

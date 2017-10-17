@@ -1,12 +1,13 @@
 <template>
 	<div class="todo_item">
 		<div>
-			<button @click="cleared = !cleared">&#10003;</button>
+			<button @click="cleared = !cleared"> &#10003; </button>
 			<button> Edit </button>
 		</div>
 		<p 
 			class="todo_title"
 			:class="{todo_cleared: cleared}">
+			<!-- Render title of todo, use filter to capitalize beginning of each word -->
 			{{todo.title | camel-case}}	
 		</p>
 		<button> X </button>
